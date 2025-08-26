@@ -351,7 +351,7 @@ async def addnewfiles(client: Bot, message: Message):
 
     docs = []
     data = {
-        '_id': file_id,
+        'id': file_id,
         'channel_id' : channel_id,
         'file_name': file_name,
         'file_size': file_size,
