@@ -28,12 +28,11 @@ BUTTONS = {}
  
 @Client.on_message(filters.group & filters.text)
 async def filter(client: Bot, message: Message):
-     if re.findall(r"^(\/|,|!|\.|[\U0001F600-\U0001F64F])", message.text):
+    if re.findall(r"^(\/|,|!|\.|[\U0001F600-\U0001F64F])", message.text):
         return
 
-   if 2 < len(message.text) < 50:
-      
-        btn = []
+    if 2 < len(message.text) < 50:
+       btn = []
 
         group_id = message.chat.id
         name = message.text
