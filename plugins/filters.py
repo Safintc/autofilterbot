@@ -32,7 +32,7 @@ async def filter(client: Bot, message: Message):
         return
 
     if 2 < len(message.text) < 50:
-       btn = []
+        btn = []
 
         group_id = message.chat.id
         name = message.text
