@@ -31,7 +31,7 @@ async def filter(client: Bot, message: Message):
      if re.findall(r"^(\/|,|!|\.|[\U0001F600-\U0001F64F])", message.text):
         return
 
-   if message.text and 2 < len(message.text) < 50:
+   if 2 < len(message.text) < 50:
       
         btn = []
 
