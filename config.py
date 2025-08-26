@@ -5,25 +5,25 @@ from logging.handlers import RotatingFileHandler
 
 
 # Get a bot token from botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "8237474547:AAGku8w1thZ_yGT5jJrt2RW_h1_G1AO6R_M")
 
 # Get from my.telegram.org (or @UseTGXBot)
-APP_ID = int(os.environ.get("APP_ID", ""))
+APP_ID = int(os.environ.get("APP_ID", "21116415"))
 
 # Get from my.telegram.org (or @UseTGXBot)
-API_HASH = os.environ.get("API_HASH", "")
+API_HASH = os.environ.get("API_HASH", "8e23c9d97d71d525741e33f6b3584f45")
 
 # Generate a user session string 
 TG_USER_SESSION = os.environ.get("TG_USER_SESSION", "")
 
 # Database URL from https://cloud.mongodb.com/
-DATABASE_URI = os.environ.get("DATABASE_URI", "")
+DATABASE_URI = os.environ.get("DATABASE_URI", "mongodb+srv://safin:x0EwcqRWeyafnQIo@cluster0.1qpfh4t.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 # Your database name from mongoDB
-DATABASE_NAME = os.environ.get("DATABASE_NAME", "")
+DATABASE_NAME = os.environ.get("DATABASE_NAME", "safin")
 
 # ID of users that can use the bot commands
-AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "").split())
+AUTH_USERS = set(int(x) for x in os.environ.get("AUTH_USERS", "-1003073675420").split())
 
 # Should bot search for document files in channels
 DOC_SEARCH = os.environ.get("DOC_SEARCH", "yes").lower()
