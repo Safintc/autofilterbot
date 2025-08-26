@@ -28,7 +28,7 @@ BUTTONS = {}
  
 @Client.on_message(filters.group & filters.text)
 async def filter(client: Bot, message: Message):
-    if re.findall("((^\/|^,|^!|^\.|^[\U0001F600-\U000E007F]).*)", message.text):
+     if re.findall(r"^(\/|,|!|\.|[\U0001F600-\U0001F64F])", message.text):
         return
 
     if 2 < len(message.text) < 50:    
